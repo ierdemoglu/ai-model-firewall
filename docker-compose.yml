@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  ai-model-firewall:
+    build: .
+    container_name: ai-model-firewall
+    restart: unless-stopped
+    volumes:
+      # Mount common AI model directories (adjust as needed)
+      - ~/LM Studio/models:/models/lmstudio:ro
+      - ~/.ollama/models:/models/ollama:ro
+      - ~/.cache/huggingface/hub:/models/hf:ro
+      # Quarantine folder (writable)
+      - ./quarantine:/app/quarantine
+    environment:
+      - PYTHONUNBUFFERED=1
+      # Uncomment and set your VirusTotal key for enterprise scanning
+      # - VIRUSTOTAL_API_KEY=your_key_here
+    command: python main.py
+    # For corporate environments, you can also run it as a one-time scanner:
+    # command: python -c "from core.pipeline import SecurityPipeline; print('Pipeline ready')"
