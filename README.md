@@ -28,7 +28,7 @@ AI Model Firewall is a plug-and-play security tool that automatically scans, ver
 ### Run with CLI / GUI (All Platforms)
 
 ```bash
-git clone https://github.com/yourusername/ai-model-firewall.git
+git clone https://github.com/ierdemoglu/ai-model-firewall.git
 cd ai-model-firewall
 pip install -r requirements.txt
 
@@ -52,7 +52,7 @@ export VIRUSTOTAL_API_KEY="your_api_key"
 ### Method 1: Run from Source (Recommended)
 
 ```bash
-git clone https://github.com/yourusername/ai-model-firewall.git
+git clone https://github.com/ierdemoglu/ai-model-firewall.git
 cd ai-model-firewall
 pip install -r requirements.txt
 python gui.py
