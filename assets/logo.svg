@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <!-- Professional Shield Logo for AI Model Firewall -->
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e88e5"/>
+      <stop offset="100%" style="stop-color:#0d47a1"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00e676"/>
+      <stop offset="100%" style="stop-color:#00c853"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Shield Background -->
+  <path d="M256 40 L420 100 L420 240 Q420 340 256 420 Q92 340 92 240 L92 100 Z" 
+        fill="url(#shieldGrad)" stroke="#0d47a1" stroke-width="12"/>
+  
+  <!-- Inner Shield -->
+  <path d="M256 80 L380 130 L380 235 Q380 310 256 370 Q132 310 132 235 L132 130 Z" 
+        fill="#1565c0" stroke="#0d47a1" stroke-width="6"/>
+  
+  <!-- AI Symbol (Circuit-like) -->
+  <circle cx="256" cy="200" r="45" fill="none" stroke="url(#accentGrad)" stroke-width="8"/>
+  <circle cx="256" cy="200" r="25" fill="#00e676"/>
+  
+  <!-- Checkmark -->
+  <path d="M220 195 L245 220 L295 170" fill="none" stroke="#0d47a1" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Radar Lines -->
+  <path d="M256 145 L256 255" fill="none" stroke="#00e676" stroke-width="4" stroke-opacity="0.6"/>
+  <path d="M200 200 L312 200" fill="none" stroke="#00e676" stroke-width="4" stroke-opacity="0.6"/>
+</svg>
